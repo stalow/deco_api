@@ -14,6 +14,12 @@ def get_tasks():
     except FileNotFoundError:
         return jsonify({})
 
+# Définition de la route
+@app.route('/hello', methods=['GET'])
+def hello():
+    return 'hello'
+
+
 # Route pour recevoir les données via POST
 @app.route('/tasks', methods=['POST'])
 def receive_tasks():
