@@ -14,7 +14,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY api.py .
 
 # Exposer le port 8080 pour l'application Flask
-EXPOSE 8080
+EXPOSE 8000
 
 # Commande pour exécuter l'application Flask
 CMD ["python", "api.py"]
